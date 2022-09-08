@@ -51,4 +51,8 @@ require('go').config.update_tool('quicktype', function(tool)
    tool.pkg_mgr = 'npm'
 end)
 
+require('go').setup({
+  lint_prompt_style = 'vt',
+})
+
 vim.cmd([[ autocmd BufWritePre *.go lua OrgImports(1000) ]])
