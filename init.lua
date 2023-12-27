@@ -1,11 +1,2 @@
--- Configuração
-require("configs.settings")
-require("configs.mappings")
+require("config")
 
--- Plugins
-require("plugins.plugins")
-require("plugins.utils")
-
--- Completion
-require("plugins.lsp")
-require("plugins.go-lsp")
