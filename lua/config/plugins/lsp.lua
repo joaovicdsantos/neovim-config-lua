@@ -21,7 +21,7 @@ return {
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
 		dependencies = {
-			{ "L3MON4D3/LuaSnip" },
+			{ "L3MON4D3/LuaSnip", "saadparwaiz1/cmp_luasnip", "hrsh7th/cmp-buffer", "hrsh7th/cmp-path" },
 		},
 		config = function()
 			-- Here is where you configure the autocompletion settings.
@@ -34,6 +34,16 @@ return {
 
 			cmp.setup({
 				formatting = lsp_zero.cmp_format(),
+				snippet = {
+					expand = function(args)
+						require("luasnip").lsp_expand(args.body)
+					end,
+				},
+				sources = {
+					{ name = "nvim_lsp" },
+					{ name = "luasnip" },
+					{ name = "buffer " },
+				},
 				mapping = cmp.mapping.preset.insert({
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-u>"] = cmp.mapping.scroll_docs(-4),
@@ -78,5 +88,10 @@ return {
 				},
 			})
 		end,
+	},
+	-- Codeium
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
 	},
 }
