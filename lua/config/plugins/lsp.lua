@@ -40,9 +40,11 @@ return {
 					end,
 				},
 				sources = {
+          { name = "path" },
 					{ name = "nvim_lsp" },
-					{ name = "luasnip" },
-					{ name = "buffer" },
+          { name = "nvim_lua" },
+					{ name = "luasnip", keyword_length = 2 },
+					{ name = "buffer", keyword_length = 3 },
 				},
 				mapping = cmp.mapping.preset.insert({
 					["<C-Space>"] = cmp.mapping.complete(),
@@ -77,7 +79,7 @@ return {
 			end)
 
 			require("mason-lspconfig").setup({
-				ensure_installed = {},
+				ensure_installed = { "lua_ls", "rust_analyzer" },
 				handlers = {
 					lsp_zero.default_setup,
 					lua_ls = function()
