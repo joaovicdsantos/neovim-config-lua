@@ -13,5 +13,8 @@ return {
 				path = "~/Documents/Obsidian/Personal",
 			},
 		},
+    ui = {
+      enable = false
+    }
 	},
 }
