@@ -20,5 +20,11 @@ wk.register({
   p = {
     name = "Paste",
     v = "Paste Saving"
+  },
+  r = {
+    name = "Rest",
+    r = "Run",
+    p = "Preview",
+    l = "Last"
   }
 }, { prefix = "<leader>" })
