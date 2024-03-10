@@ -16,6 +16,7 @@ return {
   {"hrsh7th/cmp-nvim-lua"},
   {"L3MON4D3/LuaSnip"},
   {"rafamadriz/friendly-snippets"},
+  {"onsails/lspkind.nvim"},
 
   -- Codeium
   {
