@@ -21,10 +21,25 @@ wk.register({
     name = "Paste",
     v = "Paste Saving"
   },
-  r = {
-    name = "Rest",
-    r = "Run",
-    p = "Preview",
-    l = "Last"
+  w = {
+    name = "Window",
+    j = "Jump to",
+  },
+  v = {
+    name = "LSP",
+    d = "Show Diagnostics",
+    c = {
+      name = "Code",
+      a = "Code Action"
+    },
+    r = {
+      name = "References",
+      n = "Rename",
+      r = "Find References",
+    },
+    w = {
+      name = "Workspace",
+      s = "Symbols"
+    }
   }
 }, { prefix = "<leader>" })

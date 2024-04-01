@@ -9,6 +9,6 @@ require("ibl").setup({
 		show_end = true,
 	},
 	indent = {
-		char = "⋅",
+		char = "|",
 	},
 })

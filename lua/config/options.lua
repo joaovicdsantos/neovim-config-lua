@@ -35,7 +35,7 @@ local options = {
 
 	-- colorcolumn = "80",
 	updatetime = 20,
-	scrolloff = 15,
+	scrolloff = 0,
 	mouse = "a",
 
 	title = true,
