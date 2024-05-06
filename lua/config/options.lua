@@ -24,7 +24,7 @@ local options = {
 	showmode = false,
 	errorbells = false,
 	wrap = true,
-	cursorline = true,
+	cursorline = false,
 	fileencoding = "utf-8",
 
 	backup = false,
@@ -40,7 +40,7 @@ local options = {
 
 	title = true,
 	titlestring = "Neovim - %t",
-	guifont = "CaskaydiaCove Nerd Font Mono:h18",
+	guifont = "CaskaydiaCove Nerd Font",
 	clipboard = "unnamedplus",
 }
 
