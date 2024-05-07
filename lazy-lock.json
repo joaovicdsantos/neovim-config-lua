@@ -1,5 +1,6 @@
 {
   "LuaSnip": { "branch": "master", "commit": "b152822e1a4bafb6bdf11a16cc26525cbd95ee00" },
+  "auto-session": { "branch": "main", "commit": "9e0a169b6fce8791278abbd110717b921afe634d" },
   "barbar.nvim": { "branch": "master", "commit": "88fe247ba6453b6ac422f26eb047acaac1a6000a" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
@@ -23,6 +24,7 @@
   "neo-tree.nvim": { "branch": "v3.x", "commit": "7aad1bf3f6b849cbf108e02c55ad4d701cb4d33a" },
   "neocord": { "branch": "main", "commit": "aa7a58023166533da83ca7b11c0d2569e45d7381" },
   "neoformat": { "branch": "master", "commit": "4372abb846f43ec121df40e620682c985ebc8286" },
+  "neoscroll.nvim": { "branch": "master", "commit": "e78657719485c5663b88e5d96ffcfb6a2fe3eec0" },
   "nui.nvim": { "branch": "main", "commit": "a3597dc88b53489d3fddbddbbd13787355253bb0" },
   "nvim-autopairs": { "branch": "master", "commit": "14e97371b2aab6ee70054c1070a123dfaa3e217e" },
   "nvim-cmp": { "branch": "main", "commit": "8f3c541407e691af6163e2447f3af1bd6e17f9a3" },
