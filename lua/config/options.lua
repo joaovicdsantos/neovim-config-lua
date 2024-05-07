@@ -11,7 +11,7 @@ local options = {
 	relativenumber = true,
 	numberwidth = 4,
 	incsearch = true,
-	hlsearch = false,
+	hlsearch = true,
 	ignorecase = true,
 	smartcase = true,
 

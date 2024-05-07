@@ -74,11 +74,29 @@ vim.cmd("colorscheme rose-pine")
 
 
 require("cyberdream").setup({
-    transparent = true,
-    italic_comments = true,
-    hide_fillchars = true,
-    borderless_telescope = true,
-    terminal_colors = true,
+  transparent = true,
+  italic_comments = true,
+  hide_fillchars = true,
+  borderless_telescope = true,
+  terminal_colors = true,
+  theme = {
+    colors = {
+      bg = "#ffffff",
+      bgAlt = "#35155D",
+      bgHighlight = "#35155D",
+      fg = "#ffffff",
+      grey = "#7b8496",
+      blue = "#5ea1ff",
+      green = "#5eff6c",
+      cyan = "#5ef1ff",
+      red = "#ff6e5e",
+      yellow = "#f1ff5e",
+      magenta = "#ff5ef1",
+      pink = "#ff5ea0",
+      orange = "#ffbd5e",
+      purple = "#bd5eff",
+    }
+  }
 })
 vim.cmd("colorscheme cyberdream")
 
