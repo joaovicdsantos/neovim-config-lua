@@ -70,10 +70,11 @@ vim.cmd("colorscheme rose-pine")
 -- vim.cmd("colorscheme rose-pine-main")
 -- vim.cmd("colorscheme rose-pine-moon")
 -- vim.cmd("colorscheme rose-pine-dawn")
+--
 ]]--
 
 
-require("cyberdream").setup({
+--[[ require("cyberdream").setup({
   transparent = true,
   italic_comments = true,
   hide_fillchars = true,
@@ -98,5 +99,6 @@ require("cyberdream").setup({
     }
   }
 })
-vim.cmd("colorscheme cyberdream")
+vim.cmd("colorscheme cyberdream") ]]--
 
+require("kanagawa").load("dragon")
