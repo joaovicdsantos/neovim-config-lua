@@ -43,16 +43,22 @@ local cmp_select = { behavior = cmp.SelectBehavior.Select }
 -- this is the function that loads the extra snippets to luasnip
 -- from rafamadriz/friendly-snippets
 require('luasnip.loaders.from_vscode').lazy_load()
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+keymap("i", "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
+keymap("s", "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", opts)
+keymap("i", "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
+keymap("s", "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", opts)
 
 local lspkind = require("lspkind")
 
 cmp.setup({
   sources = {
     { name = 'path' },
-    { name = 'luasnip',                keyword_length = 2 },
-    { name = 'codeium' },
     { name = 'nvim_lsp' },
     { name = 'nvim_lua' },
+    { name = 'luasnip',                keyword_length = 2 },
+    { name = 'codeium' },
     { name = 'buffer',                 keyword_length = 3 },
     { name = 'nvim_lsp_signature_help' },
   },
@@ -61,7 +67,7 @@ cmp.setup({
       mode = 'symbol_text',
       maxwidth = 50,
       ellipsis_char = '...',
-      show_labelDetails = true,
+      show_labelDetails = false,
       symbol_map = {
         Text = "󰉿",
         Method = "󰆧",
@@ -89,7 +95,14 @@ cmp.setup({
         Operator = "󰆕",
         TypeParameter = "",
         Codeium = "",
-      }
+      },
+      menu = ({
+        buffer = "[Buffer]",
+        nvim_lsp = "[LSP]",
+        luasnip = "[LuaSnip]",
+        nvim_lua = "[Lua]",
+        latex_symbols = "[Latex]",
+      })
     })
   },
   mapping = cmp.mapping.preset.insert({
