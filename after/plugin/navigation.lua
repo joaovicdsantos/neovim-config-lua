@@ -6,5 +6,5 @@ vim.keymap.set("n", "<A-c>", "<Cmd>BufferClose<CR>")
 vim.keymap.set("n", "<C-p>", "<Cmd>BufferPick<CR>")
 
 -- Neotree
-vim.keymap.set("n", "<leader>t", "<Cmd>Neotree<CR>")
+vim.keymap.set("n", "<leader>tt", "<Cmd>Neotree<CR>")
 vim.keymap.set("n", "<leader>tc", "<Cmd>Neotree close<CR>")
